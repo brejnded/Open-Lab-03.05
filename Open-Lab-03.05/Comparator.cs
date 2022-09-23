@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Open_Lab_03._05
 {
@@ -6,6 +6,12 @@ namespace Open_Lab_03._05
     {
         public bool MatchCaseInsensitive(string str1, string str2)
         {
+            if (str1.ToUpper() == str2.ToUpper())
+            {
+                return true;
+            }
+            else { return false; }
+            
             throw new NotImplementedException();
         }
     }
